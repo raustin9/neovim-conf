@@ -1,0 +1,5 @@
+require("config")
+vim.cmd('colorscheme rose-pine')
+vim.cmd('colorscheme gotham256')
+vim.cmd('colorscheme nightfly')
+vim.cmd('colorscheme gruvbox')

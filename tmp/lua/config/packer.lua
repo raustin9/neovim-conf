@@ -11,9 +11,9 @@ return require('packer').startup(function(use)
 	}
 
 	use({ 'rose-pine/neovim', as = 'rose-pine' })
-  use({ 'whatyouhide/vim-gotham' })
-  use({ 'kyoz/purify', rtp='vim' })
-	-- vim.cmd('colorscheme rose-pine')
+  use({ "whatyouhide/vim-gotham" })
+  use { "ellisonleao/gruvbox.nvim" }
+  use { "bluz71/vim-nightfly-colors", as = 'nightfly' }
 
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
@@ -22,19 +22,6 @@ return require('packer').startup(function(use)
 	use('mbbill/undotree')
 
 	use('tpope/vim-fugitive')
-
-  use { "ellisonleao/gruvbox.nvim" }
-  use { "bluz71/vim-nightfly-colors", as = "nightfly" }
-  use { "maxmx03/fluoromachine.nvim" }
-  use { "folke/tokyonight.nvim" }
-  -- use ({ "lmburns/kimbox" })
-  use { 'Mofiqul/dracula.nvim' }
-  use { 'artanikin/vim-synthwave84' }
-  use { 'marko-cerovac/material.nvim' }
-
-  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-    require("toggleterm").setup()
-  end}
 
 	use {
 		'VonHeikemen/lsp-zero.nvim',

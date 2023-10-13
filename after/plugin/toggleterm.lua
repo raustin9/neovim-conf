@@ -1,0 +1,38 @@
+require("toggleterm").setup{
+--  size = 20, 
+--
+--  open_mapping = [[<c-\>]],
+--  on_create = fun(t: Terminal), -- function to run when the terminal is first created
+--  on_open   = fun(t: Terminal), -- function to run when the terminal opens
+--  on_close  = fun(t: Terminal), -- function to run when the terminal closes
+--  on_stdout = fun(t: Terminal, job: number, data: string[], name: string), -- callback for processing output on stdout
+--  on_stderr = fun(t: Terminal, job: number, data: string[], name: string), -- callback for processing output on stderr
+--  on_exit   = fun(t: Terminal, job: number, data: string[], name: string), -- function to run when terminal process exits
+--  hide_numbers = true, -- hide the number column in toggleterm buffers
+--  shade_filetypes = {},
+--  autochdir = false, -- when neovim changes its current directory the terminal will change its own when it is opened
+--  highlights = {
+--    -- highlights which map to a highlight group name and a table of its values
+--    -- NOTE: this is only a subset of values, any group placed here will be set for the terminal window split
+----    Normal = {
+----      guibg = "<VALUE-HERE>",
+----    },
+----    NormalFloat = {
+----      link = 'Normal'
+----    ,
+----    FloatBorder = {
+----      guifg = "<VALUE-HERE>"
+--  },
+--  shade_terminals = true,
+--  shading_factor = '90',
+--  start_in_insert = true,
+--  close_on_exit = true,
+--  shell = vim.o.shell,
+--  auto_scroll = true,
+--  winbar = {
+--    enabled = false,
+--    name_formatter = function(term) -- term: Terminal
+--      return term.name
+--    end
+--  },
+}

@@ -84,16 +84,6 @@ _G.packer_plugins = {
     path = "/home/raustin9/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["dracula.nvim"] = {
-    loaded = true,
-    path = "/home/raustin9/.local/share/nvim/site/pack/packer/start/dracula.nvim",
-    url = "https://github.com/Mofiqul/dracula.nvim"
-  },
-  ["fluoromachine.nvim"] = {
-    loaded = true,
-    path = "/home/raustin9/.local/share/nvim/site/pack/packer/start/fluoromachine.nvim",
-    url = "https://github.com/maxmx03/fluoromachine.nvim"
-  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/home/raustin9/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
@@ -118,11 +108,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/raustin9/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["material.nvim"] = {
-    loaded = true,
-    path = "/home/raustin9/.local/share/nvim/site/pack/packer/start/material.nvim",
-    url = "https://github.com/marko-cerovac/material.nvim"
   },
   nightfly = {
     loaded = true,
@@ -154,11 +139,6 @@ _G.packer_plugins = {
     path = "/home/raustin9/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  purify = {
-    loaded = true,
-    path = "/home/raustin9/.local/share/nvim/site/pack/packer/start/purify/vim",
-    url = "https://github.com/kyoz/purify"
-  },
   ["rose-pine"] = {
     loaded = true,
     path = "/home/raustin9/.local/share/nvim/site/pack/packer/start/rose-pine",
@@ -168,17 +148,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/raustin9/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["toggleterm.nvim"] = {
-    config = { "\27LJ\2\0028\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0" },
-    loaded = true,
-    path = "/home/raustin9/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
-    url = "https://github.com/akinsho/toggleterm.nvim"
-  },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/home/raustin9/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
   },
   undotree = {
     loaded = true,
@@ -194,23 +163,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/raustin9/.local/share/nvim/site/pack/packer/start/vim-gotham",
     url = "https://github.com/whatyouhide/vim-gotham"
-  },
-  ["vim-synthwave84"] = {
-    loaded = true,
-    path = "/home/raustin9/.local/share/nvim/site/pack/packer/start/vim-synthwave84",
-    url = "https://github.com/artanikin/vim-synthwave84"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Runtimepath customization
-time([[Runtimepath customization]], true)
-vim.o.runtimepath = vim.o.runtimepath .. ",/home/raustin9/.local/share/nvim/site/pack/packer/start/purify/vim"
-time([[Runtimepath customization]], false)
--- Config for: toggleterm.nvim
-time([[Config for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\0028\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
-time([[Config for toggleterm.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

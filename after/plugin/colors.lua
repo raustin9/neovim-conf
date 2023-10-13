@@ -9,11 +9,11 @@
 -- ColorMyPencils()
 --
 
--- config for gruvbox
+-- Configuration for Gruvbox color scheme
 require("gruvbox").setup({
   undercurl = true,
   underline = true,
-  bold = true,
+  bold      = true,
   italic = {
     strings = true,
     comments = true,
@@ -24,7 +24,7 @@ require("gruvbox").setup({
   invert_selection = false,
   invert_signs = false,
   invert_tabline = false,
-  invert_tabline_guides = false,
+  invert_intend_guides = false,
   inverse = true,
   contrast = "",
   palette_overrides = {},
@@ -32,3 +32,50 @@ require("gruvbox").setup({
   dim_inactive = false,
   transparent_mode = false,
 })
+
+
+--require("kimbox").setup({
+--  style = "cannon",
+--
+--  toggle_style = {
+--    key = "<Leader>ts",
+--    bgs = require("kimbox.config").bg_colors,
+--  },
+--
+--  langs08 = true,
+--
+--  popup = {
+--    background = false,
+--  },
+--
+--  diagnostics = {
+--    background = true,
+--  },
+--
+--  allow_bold = true,
+--  allow_italic = false,
+--  allow_underline = false,
+--  allow_undercurl = true,
+--  allow_reverse = false,
+--  transparent = false,
+--  term_colors = true,
+--  ending_tildes = false,
+--
+--  colors = {},
+--  highlights = {},
+--  disbled = {
+--    langs = {},
+--    langs08 = {},
+--    plugins = {},
+--  },
+--
+--  run_before = nil,
+--  run_after = nil,
+--})
+--
+--
+--vim.g.kimbox_config = {
+--  vim.cmd('colorscheme kimbox')
+--}
+--
+--require("kimbox").load()
